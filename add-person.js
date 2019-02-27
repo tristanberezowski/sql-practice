@@ -9,7 +9,6 @@ const pg = require("knex") ({
     ssl      : settings.ssl,
     port     : settings.port
   }
-  
 });
 
 pg('famous_people').insert({
