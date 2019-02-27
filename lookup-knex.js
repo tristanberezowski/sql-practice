@@ -9,7 +9,6 @@ const pg = require("knex") ({
     ssl      : settings.ssl,
     port     : settings.port
   }
-  
 });
 
 pg.select('*').from('famous_people').where('first_name', process.argv[2]).orWhere('last_name', process.argv[2])
